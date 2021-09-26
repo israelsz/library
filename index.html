@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="library.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <h1>Virtual Library</h1>
+    </nav>
+
+    <div class="books" id="bookSection">
+
+    </div>
+
+    <div class="addSection">
+        <button class="btnAddBook" id="btnDisplayForm">Add Book</button>
+    </div>
+
+    <div class="backgroundForm"></div>
+
+    <div class="formContainer">
+        <div class="bookForm">
+            <h1>Add Book</h1>
+            <div class="bookInput">
+                <input type="text" id="bookTitle" class="inputText" placeholder="Book Title">
+            </div>
+
+            <div class="bookInput">
+                <input type="text" id="bookAuthor" class="inputText" placeholder="Author">
+            </div>
+
+            <div class="bookInput">
+                <input type="number" id="bookPages" class="inputText" placeholder="Number of pages">
+            </div>
+
+            <div class="bookInput">
+                <label for="bookRead">Readed</label>
+                <input type="checkbox" id="bookRead">
+            </div>
+
+            <div class="bookInput">
+                <button class="btnAddBook" id="btnNewBook">Add Book</button>
+                <button class="btnCancel" id="btnCloseForm">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

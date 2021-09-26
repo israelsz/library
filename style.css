@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #664dd4;
+}
+
+nav {
+    background-color: #4269e9;
+    border-bottom: 6px solid #000000;
+}
+
+nav h1{
+    font-size: 28px;
+    font-weight: 800;
+    font-style: italic;
+    color:#ffffff;
+    text-shadow: 0 0 2px #000000, 0 0 2px #000000, 0 0 2px #000000, 0 0 2px #000000;
+    padding: 2vh 0 2vh 4vh;
+}
+
+.addSection {
+    position: fixed;
+    width: 100%;
+    bottom: 5vh;
+    right: 5vw;
+    text-align: end;
+}
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2vh 2vh 2vh 2vh;
+}
+
+.bookCard {
+    border: 4px solid #000000;
+    background-color: #77db19;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    height: 10em;
+    width: 12em;
+}
+
+.cardText {
+    font-size: 20px;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+}
+
+.btnRemove {
+    background-color: #ff6767f6;
+    border: 2px solid #000000;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 800;
+    height: 3em;
+    width: 8em;
+}
+
+.btnRemove:hover {
+    opacity: 0.8;
+}
+
+.formContainer {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.bookForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #fa2727;
+    height: 50vh;
+    width: 30vw;
+    background-color: #f7cf63;
+}
+
+.bookInput {
+    margin-top: 2vh;
+}
+
+.bookInput label {
+    font-size: 20px;
+    font-weight: 800;
+    margin-right: 1vh;
+}
+
+[type=checkbox] {
+    transform: scale(1.5);
+}
+
+.inputText {
+    font-size: 20px;
+    border: 3px solid #000000;
+}
+
+.btnAddBook {
+    background-color: #9ce789;
+    border: 4px solid #000000;
+    font-size: 15px;
+    font-weight: 700;
+    height: 3em;
+    width: 8em;
+}
+
+.btnCancel {
+    background-color: #c78fec;
+    border: 4px solid #000000;
+    font-size: 15px;
+    font-weight: 700;
+    height: 3em;
+    width: 8em;
+}
+
+.btnCancel:hover {
+    opacity: 0.7;
+}
+
+.btnAddBook:hover {
+    opacity: 0.7;
+}
+
+.backgroundForm {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.65;
+}
+
+.open {
+    display: block;
+}
+
+.activate{
+    display: block;
+}
+
+@media (max-width: 1200px) {
+    .bookForm {
+        height: 68vh;
+        width: 80vw;
+    }
+}
